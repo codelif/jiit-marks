@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jiit-marks"
-version = "0.1.2"
+version = "0.2.0"
 description = "Extract marks data from report PDF obtained from JIIT Webportal (yuck!)"
 authors = ["Harsh Sharma <harsh@codelif.in>"]
 license = "MIT License"
