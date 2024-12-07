@@ -1,7 +1,4 @@
 import pymupdf
-import sys
-from pprint import pprint
-import json
 
 def parse_report_file(file: str) -> dict:
     doc = pymupdf.open(file)
@@ -67,12 +64,3 @@ def parse_report(doc: pymupdf.Document) -> dict:
     return data
 
 
-if __name__ == "__main__":
-    import json
-    # parse_report(doc)
-    print("[")
-    for i, v in enumerate(sys.argv[1:]):
-        print(json.dumps(parse_report_file(v)))
-        if (i + 1 != len(sys.argv[1:])):
-          print(",")
-    print("]")
